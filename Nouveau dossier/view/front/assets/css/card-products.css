@@ -1,0 +1,161 @@
+
+.team-item {
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+
+.team-item::after {
+    position: absolute;
+    content: "";
+    top: 3rem;
+    right: 3rem;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .1);
+    transition: .5s;
+    z-index: -1;
+}
+
+.team-item:hover::after {
+    background: var(--primary);
+}
+
+.team-item h5,
+.team-item small {
+    transition: .5s;
+}
+
+.team-item:hover h5,
+.team-item:hover small {
+    color: var(--light);
+}
+.team-item {
+    
+
+
+    margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    .team-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+ul{
+    list-style-type: none;
+}
+.team-item .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    .team-item .d-flex {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.team-item .flex-shrink-0 {
+    margin-bottom: 10px;
+}
+
+.team-item img {
+    width: 100%;
+    max-width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+    .team-item img {
+        max-width: none;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+.team-item .px-4 {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .team-item .px-4 {
+        text-align: left;
+    }
+}
+.service-item {
+    position: relative;
+    height: 350px;
+    padding: 30px 25px;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: var(--primary);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    background: url(../images/icon-shape-red.png) center center no-repeat;
+    transition: .5s;
+}
+
+.service-item:hover .service-icon {
+    color: var(--primary);
+    background: url(../images/icon-shape-white.png);
+}
+
+.service-item h5,
+.service-item p {
+    transition: .5s;
+}
+
+.service-item:hover h5,
+.service-item:hover p {
+    color: var(--light);
+}
+
+.service-item a.btn {
+    position: relative;
+    display: flex;
+    color: var(--primary);
+    transition: .5s;
+    z-index: 1;
+}
+
+.service-item:hover a.btn {
+    color: var(--primary);
+}
+
+.service-item a.btn::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    background: #DDDDDD;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service-item:hover a.btn::before {
+    width: 100%;
+    background: var(--light);
+}

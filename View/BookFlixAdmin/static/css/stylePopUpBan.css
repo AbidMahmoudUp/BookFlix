@@ -1,0 +1,92 @@
+#popup-container-Ban {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+    padding: 20px;
+    
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+  #popup-container-Ban form {
+  display: flex;
+  flex-direction: column;
+}
+
+#popup-container-Ban label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#popup-container-Ban input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #565e64;
+  margin-top: 15%;
+  margin-left: 2%;
+  padding-right: 3.5rem;
+}
+#popup-container-Ban input[type="text"]:focus{
+  
+  border: none;
+  border-bottom: 1px solid #2d2f30;
+  outline: none;
+
+}
+#popup-container-Ban button[type="submit"] {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#popup-container-Ban button[type="submit"]:hover {
+  /* background-color: #3e8e41; */
+}
+  #close-popup-Ban {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  #popup-content-Ban {
+    margin-top: 30px;
+  }
+  #popup-content-Ban.input-icon {
+   font-size: 1.5rem;
+  }
+  .input-icon{
+	position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 3rem;
+  top: 3%;
+  right: 4%;
+  
+  z-index: 1;
+  pointer-events: none;
+  }
+  #popup-overlay-Ban {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9998;
+  }
